@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – MTG Sealed Sim</title>
+  <style>
+    :root {
+      --primary: #8F31D7;
+      --text: #1a1a1a;
+      --muted: #555;
+      --bg: #fafafa;
+      --card: #fff;
+      --border: #e5e5e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f0f0f0;
+        --muted: #aaa;
+        --bg: #121212;
+        --card: #1e1e1e;
+        --border: #333;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .logo {
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #8F31D7, #B4C2FF);
+      border-radius: 14px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .updated {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .lang-switch button {
+      padding: 6px 20px;
+      border-radius: 20px;
+      border: 1.5px solid var(--primary);
+      background: transparent;
+      color: var(--primary);
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-switch button.active {
+      background: var(--primary);
+      color: #fff;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+    p {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 48px;
+    }
+    [data-lang] { display: none; }
+    [data-lang].visible { display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"></div>
+      <h1>MTG Sealed Sim</h1>
+      <p class="updated" data-lang="ja" id="date-ja">最終更新：2026年5月</p>
+      <p class="updated" data-lang="en" id="date-en">Last updated: May 2026</p>
+      <div class="lang-switch">
+        <button id="btn-ja" class="active" onclick="setLang('ja')">日本語</button>
+        <button id="btn-en" onclick="setLang('en')">English</button>
+      </div>
+    </header>
+
+    <!-- Japanese -->
+    <div data-lang="ja">
+      <section>
+        <h2>個人情報の収集について</h2>
+        <p>本アプリ（MTG Sealed Sim）は、ユーザーの個人情報を収集・保存しません。氏名・メールアドレス・位置情報などの個人を特定できる情報は一切取得しません。</p>
+      </section>
+      <section>
+        <h2>外部サービスの利用</h2>
+        <p>カード画像・カード情報の取得には <a href="https://scryfall.com" target="_blank">Scryfall API</a>（scryfall.com）を使用しています。Scryfall のプライバシーポリシーについては同サービスの規約をご確認ください。</p>
+      </section>
+      <section>
+        <h2>アプリ内課金</h2>
+        <p>アプリ内課金は Apple の App Store を通じて処理されます。決済情報は Apple が管理し、当アプリは取得しません。</p>
+      </section>
+      <section>
+        <h2>デバイス上のデータ</h2>
+        <p>構築したデッキの履歴はデバイス内にのみ保存されます。外部サーバーへの送信は行いません。</p>
+      </section>
+      <section>
+        <h2>お問い合わせ</h2>
+        <p>プライバシーに関するご質問は、アプリ内の「お問い合わせ」フォームよりご連絡ください。</p>
+      </section>
+    </div>
+
+    <!-- English -->
+    <div data-lang="en">
+      <section>
+        <h2>Information We Collect</h2>
+        <p>MTG Sealed Sim does not collect or store any personal information. We do not collect names, email addresses, location data, or any other personally identifiable information.</p>
+      </section>
+      <section>
+        <h2>Third-Party Services</h2>
+        <p>Card images and card data are fetched from the <a href="https://scryfall.com" target="_blank">Scryfall API</a> (scryfall.com). Please refer to Scryfall's own privacy policy for their data practices.</p>
+      </section>
+      <section>
+        <h2>In-App Purchases</h2>
+        <p>In-app purchases are processed by Apple's App Store. Payment information is managed solely by Apple and is never accessed by this app.</p>
+      </section>
+      <section>
+        <h2>Data Stored on Device</h2>
+        <p>Deck history is stored locally on your device only and is never transmitted to any external server.</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>If you have any questions about this privacy policy, please use the Contact form within the app.</p>
+      </section>
+    </div>
+
+    <footer>
+      <p>© 2026 MTG Sealed Sim</p>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.classList.toggle('visible', el.dataset.lang === lang);
+      });
+      document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+    // 初期表示
+    setLang('ja');
+  </script>
+</body>
+</html>
